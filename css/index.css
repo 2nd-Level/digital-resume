@@ -1,0 +1,162 @@
+.conatiner {
+  max-width: 95%;
+  margin: 0 auto;
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  margin-top: 30px;
+}
+.all {
+  height: 350px;
+  color: black;
+}
+.header {
+  background-image: linear-gradient(white, #e786f0);
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 9rem;
+}
+.header span {
+  font-size: 3rem;
+}
+.header h5 {
+  font-size: 5rem;
+}
+.header .nav {
+  width: 15%;
+}
+.header .nav a {
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 3rem;
+  padding: 9.8px 0;
+}
+.header .nav a span {
+  color: black;
+}
+.header .nav a span:hover {
+  color: #BC58F4;
+}
+footer {
+  background-color: red;
+}
+.skills-section {
+  background-image: linear-gradient(#e786f0, white);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-section h2 {
+  font-size: 5rem;
+  color: black;
+}
+.skills-section .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.skills-section .skills .box {
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-section .skills .box h3 {
+  font-size: 3rem;
+  color: black;
+}
+.skills-section .skills .box ul li {
+  font-size: 2rem;
+  color: black;
+}
+.experience-section {
+  background-image: linear-gradient(white, #e786f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-section h2 {
+  font-size: 5rem;
+}
+.experience-section .experience {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.experience-section .experience .exper {
+  width: 100%;
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+}
+.experience-section .experience .exper h4 {
+  font-size: 2rem;
+  color: black;
+}
+.experience-section .experience .exper p {
+  color: black;
+}
+.education-section {
+  background-image: linear-gradient(#e786f0, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education-section h2 {
+  font-size: 5rem;
+}
+.education-section .education {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.education-section .education .edu {
+  width: 100%;
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+}
+.education-section .education .edu h4 {
+  font-size: 2rem;
+  color: black;
+}
+.education-section .education .edu p {
+  color: black;
+}
+.contact {
+  background-image: linear-gradient(white, #e786f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-info {
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  margin-top: 50px;
+}
+.contact .social-media {
+  margin-top: 30px;
+  display: flex;
+}
+.contact h5 {
+  font-size: 5rem;
+}
+.contact p {
+  font-size: 2rem;
+}
