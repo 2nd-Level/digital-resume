@@ -1,5 +1,6 @@
 .conatiner {
-  max-width: 95%;
+  font-family: 'Libre Baskerville', serif;
+  max-width: 75%;
   margin: 0 auto;
   box-shadow: 2px 5px 20px;
   color: #BC58F4;
@@ -14,19 +15,41 @@
   display: flex;
   justify-content: space-between;
 }
-.header h1 {
-  font-size: 9rem;
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.header span {
-  font-size: 3rem;
+.header-info h1 {
+  font-size: 7rem;
+  display: flex;
 }
-.header h5 {
-  font-size: 5rem;
+.header-info span {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.header .nav {
+.header-info h5 {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+.mypic {
+  width: 30%;
+  margin-left: 180px;
+}
+.mypic img {
+  background-image: linear-gradient(white, #e786f0);
+  box-shadow: 2px 5px 20px;
+  color: #BC58F4;
+  margin-top: 40px;
+  max-width: 50%;
+  height: auto;
+}
+.nav {
   width: 15%;
 }
-.header .nav a {
+.nav a {
   background-image: linear-gradient(white, #e786f0);
   box-shadow: 2px 5px 20px;
   color: #BC58F4;
@@ -37,10 +60,10 @@
   font-size: 3rem;
   padding: 9.8px 0;
 }
-.header .nav a span {
+.nav a span {
   color: black;
 }
-.header .nav a span:hover {
+.nav a span:hover {
   color: #BC58F4;
 }
 footer {
