@@ -3,7 +3,7 @@
   max-width: 75%;
   margin: 0 auto;
   box-shadow: 2px 5px 20px;
-  color: #BC58F4;
+  color: #e6eba2;
   margin-top: 30px;
 }
 .all {
@@ -11,7 +11,7 @@
   color: black;
 }
 .header {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
   display: flex;
   justify-content: space-between;
 }
@@ -39,9 +39,9 @@
   margin-left: 180px;
 }
 .mypic img {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
   box-shadow: 2px 5px 20px;
-  color: #BC58F4;
+  color: #cf95f0;
   margin-top: 40px;
   max-width: 50%;
   height: auto;
@@ -50,15 +50,15 @@
   width: 15%;
 }
 .nav a {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
   box-shadow: 2px 5px 20px;
-  color: #BC58F4;
+  color: #cf95f0;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   display: flex;
   font-size: 3rem;
-  padding: 9.8px 0;
+  padding: 9.7px 0;
 }
 .nav a span {
   color: black;
@@ -70,9 +70,9 @@ footer {
   background-color: red;
 }
 .skills-section {
-  background-image: linear-gradient(#e786f0, white);
+  background-image: linear-gradient(#e0b8e4, white);
   box-shadow: 2px 5px 20px;
-  color: #BC58F4;
+  color: #cf95f0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,9 +88,6 @@ footer {
   width: 100%;
 }
 .skills-section .skills .box {
-  background-image: linear-gradient(white, #e786f0);
-  box-shadow: 2px 5px 20px;
-  color: #BC58F4;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -106,13 +103,16 @@ footer {
   color: black;
 }
 .experience-section {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 5px 20px;
+  color: #b7a8c0;
 }
 .experience-section h2 {
   font-size: 5rem;
+  color: black;
 }
 .experience-section .experience {
   display: flex;
@@ -122,9 +122,6 @@ footer {
 }
 .experience-section .experience .exper {
   width: 100%;
-  background-image: linear-gradient(white, #e786f0);
-  box-shadow: 2px 5px 20px;
-  color: #BC58F4;
 }
 .experience-section .experience .exper h4 {
   font-size: 2rem;
@@ -134,13 +131,16 @@ footer {
   color: black;
 }
 .education-section {
-  background-image: linear-gradient(#e786f0, white);
+  background-image: linear-gradient(#e0b8e4, white);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 5px 20px;
+  color: #cf95f0;
 }
 .education-section h2 {
   font-size: 5rem;
+  color: black;
 }
 .education-section .education {
   display: flex;
@@ -150,9 +150,6 @@ footer {
 }
 .education-section .education .edu {
   width: 100%;
-  background-image: linear-gradient(white, #e786f0);
-  box-shadow: 2px 5px 20px;
-  color: #BC58F4;
 }
 .education-section .education .edu h4 {
   font-size: 2rem;
@@ -162,15 +159,17 @@ footer {
   color: black;
 }
 .contact {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
+  box-shadow: 2px 5px 20px;
+  color: #b7a8c0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .contact .contact-info {
-  background-image: linear-gradient(white, #e786f0);
+  background-image: linear-gradient(white, #e0b8e4);
   box-shadow: 2px 5px 20px;
-  color: #BC58F4;
+  color: #cf95f0;
   margin-top: 50px;
 }
 .contact .social-media {
