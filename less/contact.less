@@ -1,24 +1,42 @@
 //contact
 
 .contact {
-    .middle-cards(linear-gradient(white, rgb(224, 184, 228))); 
+    .middle-cards(linear-gradient(white, rgb(224, 184, 228)));
+    padding-top: 40px; 
     box-shadow: 2px 5px 20px;
-    color: #b7a8c0;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     .contact-info {
         .colormix1();
+        color:#b7a8c0;
         margin-top: 50px;
+        padding: 20px;
     }
-    .social-media {
-        margin-top: 30px;
-        display: flex;
-    }
+    
     h5 {
         .headings();
+        color: black;
     }
     p {
         .sub-headings();
+        display: flex;
+        .centerflex();
+        margin: 8px 0;
+        color: black;
+        a{ 
+            padding: 10px;
+            text-decoration: none;
+            .colormix1();
+            display: none;
+        }
+    }
+    
+    .social-media {
+        margin-top: 30px;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
     }
 }

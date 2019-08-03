@@ -2,24 +2,44 @@
 .experience-section{
     .middle-cards(linear-gradient(white, rgb(224, 184, 228))); 
     box-shadow: 2px 5px 20px;
-    color: #b7a8c0;
+    color: black;
     h2{
         .headings();
         color:black;
     }
     .experience{
+        .each-card();
         .card-info();
         .exper{
-            .each-card();
+            width:50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 15px;
             // .colormix1();
             h4 {
-                .sub-headings();
-                color:black
+                font-size: 2rem;
+                color:black;
+                font-weight: bold;
+            }
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 550;
+                color:black;
+                padding: 5px 0 10px 0;
             }
             p {
                 color:black
             }
+            ul{
+                width: 30%;
+               color:black;
+               li{
+                   font-size:1.2rem;
+                padding-bottom: 5px;
+                list-style-type: circle;
+               }
+            }
         }
-    
     }
 }
