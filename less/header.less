@@ -1,63 +1,127 @@
 
-
 //header
 .header {
     .bg();
-    display: flex;
-    justify-content: space-between;
+    .mob-nav {
+        background-color: green;
+        max-width: 95%;
+        nav a{
+    .colormix1();
+    .centerflex();
+    text-decoration: none;
+
+    font-size: 1rem;
+    padding: 3px 0;
+    span {
+        color: black;  
+        }
+    }
+    //  max-width:100%;  
+    //  flex-direction: column;    
+        
+    // @media @largeDesktop {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+   
 }
 
 .header-info {
     display: flex;
     flex-direction: column;
     .centerflex();
+    width: 100%;
+    padding: 15px;
 h1 {
-    font-size: 7rem;
+    font-size: 4rem;
     display: flex;
     
 }
-span {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
+// span {
+//     font-size: 1.5rem;
+//     justify-content: center;
+//     align-items: center;
+//     padding-bottom: 10px;
     
+// }
+.sp {
+     max-width: 30%;
+     padding: 20px 0;
+   
 }
-h5{
+p{
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 }
 
 
 .mypic{
-    width:30%;
-    margin-left: 180px;
+    
+//     width:30%;
+//     margin-left: 180px;
     img {
-        .colormix1();
-        margin-top: 40px;
-        max-width: 50%;
-        height: auto;
+    display:none;
+//         
+//         margin-top: 40px;
+       
     }
 }
 
 .nav {
-    width: 15%;
-a {
-    .colormix1();
-    display: flex;
-    .centerflex();
-    text-decoration: none;
-    display: flex;
-    font-size: 3rem;
-    padding: 13px 0;
-    span {
-        color: black;
+//     width: 15%;
+        display:none;
+// a {
+//     .colormix1();
+//     display: flex;
+//     .centerflex();
+//     text-decoration: none;
+//     display: flex;
+//     font-size: 3rem;
+//     padding: 13px 0;
+//     span {
+//         color: black;
+//     }
+}
+// }
+ 
+// .nav a span:hover {
+//     color: #BC58F4;
+// }
+
+//Large Desktop
+
+.header {
+    @media @largeDesktop {
+    .nav {
+        display: inline;
+    }
+    .mob-nav {
+        display: none;
     }
 }
 }
- 
-.nav a span:hover {
-    color: #BC58F4;
+
+.header-info {
+    .sp{
+        @media @largeDesktop {
+            display: none;
+        }
+
+    }
+}
+
+
+
+.mypic {
+    img {
+        @media @largeDesktop {
+            .colormix1();
+            display: inline;
+            max-width: 10%;
+            height: auto;
+        }
+    }
 }
 
 
@@ -68,3 +132,214 @@ a {
 
 
 
+//header
+.header {
+    .bg();
+    //  max-width:100%;  
+    //  flex-direction: column;    
+        
+    // @media @largeDesktop {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+   
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    .centerflex();
+    width: 100%;
+    padding: 15px;
+h1 {
+    font-size: 4rem;
+    display: flex;
+    
+}
+// span {
+//     font-size: 1.5rem;
+//     justify-content: center;
+//     align-items: center;
+//     padding-bottom: 10px;
+    
+// }
+.sp {
+     max-width: 30%;
+     padding: 20px 0;
+    @media @largeDesktop {
+        display: none;
+    }
+}
+p{
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+}
+
+
+.mypic{
+    
+//     width:30%;
+//     margin-left: 180px;
+    img {
+    display:none;
+//         
+//         margin-top: 40px;
+        @media @largeDesktop {
+            .colormix1();
+            display: inline;
+            max-width: 10%;
+            height: auto;
+        }
+    }
+}
+
+.nav {
+//     width: 15%;
+        display:none;
+// a {
+//     .colormix1();
+//     display: flex;
+//     .centerflex();
+//     text-decoration: none;
+//     display: flex;
+//     font-size: 3rem;
+//     padding: 13px 0;
+//     span {
+//         color: black;
+//     }
+}
+// }
+ 
+// .nav a span:hover {
+//     color: #BC58F4;
+// }
+
+
+// //header
+// .header {
+//    @media @largeDesktop { 
+//        .bg();
+//     display: flex;
+//     justify-content: space-between;
+//    }
+//     @media @smallPhone {
+//         max-width:100%;  
+//         display: flex;
+//         flex-direction: column;    
+//     }
+// }
+
+
+
+// .header-info {
+//     @media @largeDesktop { 
+//         display: flex;
+//         flex-direction: column;
+//         .centerflex();
+//     }
+//     @media @smallPhone {
+//         max-width: 100%;
+//         padding-top: 10px;
+//          align-items: center;
+            
+//     }
+
+//     h1 {
+//         @media @largeDesktop { 
+//              font-size: 7rem;
+//              display: flex;
+//         }
+//         @media @smallPhone {
+//             font-size: 3rem;
+//         }
+    
+//     }
+
+//     span {
+//         @media @largeDesktop { 
+//              font-size: 2rem;
+//         justify-content: center;
+//         align-items: center;
+//         }
+//         @media @smallPhone {
+//             font-size: 1.5rem;
+//         }
+        
+//     }
+    
+//     .sp {
+//         @media @largeDesktop { 
+//             display: none;
+//         }
+//         @media @smallPhone {
+//             display: inline;
+//             max-width: 20%;
+//             height: auto;
+//         }
+        
+//     }
+
+//     p {
+//         @media @largeDesktop { 
+//             margin-left: 10px;
+//         font-size: 2rem;
+//         }
+//         @media @smallPhone {
+//             width: 90%;
+//             font-size: 1.7rem;
+//         }
+//     }
+//     }
+
+
+// .mypic{
+    
+//     @media @largeDesktop { 
+//         max-width:30%;
+//     margin-left: 180px;
+//     }
+//     @media @smallPhone {
+//         display: none;
+            
+//     }
+   
+//     img {
+//         @media @largeDesktop { 
+//              .colormix1();
+//         margin-top: 40px;
+//         max-width: 50%;
+//         height: auto;  
+//     }
+// }
+// }
+
+
+
+// .nav {
+//     @media @largeDesktop { 
+//         width: 15%;
+//     }
+// a {
+//     @media @largeDesktop { 
+//         .colormix1();
+//     display: flex;
+//     .centerflex();
+//     text-decoration: none;
+//     display: flex;
+//     font-size: 3rem;
+//     padding: 13px 0;
+//     }
+//     @media @smallPhone
+//     span {
+//         @media @largeDesktop { 
+//             color: black;
+//     }
+// }
+// }
+ 
+// .nav a span:hover {
+//     color: #BC58F4;
+// }
+// }
+}

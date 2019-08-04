@@ -15,98 +15,121 @@
 }
 .header {
   background-image: linear-gradient(white, #e0b8e4);
-  display: flex;
-  justify-content: space-between;
 }
-.header-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header .mob-nav {
+  background-color: green;
+  max-width: 95%;
 }
-.header-info h1 {
-  font-size: 7rem;
-  display: flex;
-}
-.header-info span {
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-.header-info h5 {
-  margin-left: 10px;
-  font-size: 2rem;
-}
-.mypic {
-  width: 30%;
-  margin-left: 180px;
-}
-.mypic img {
-  background-image: linear-gradient(white, #e0b8e4);
-  box-shadow: 2px 5px 20px;
-  color: black;
-  margin-top: 40px;
-  max-width: 50%;
-  height: auto;
-}
-.nav {
-  width: 15%;
-}
-.nav a {
+.header .mob-nav nav a {
   background-image: linear-gradient(white, #e0b8e4);
   box-shadow: 2px 5px 20px;
   color: black;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  display: flex;
-  font-size: 3rem;
-  padding: 13px 0;
+  font-size: 1rem;
+  padding: 3px 0;
 }
-.nav a span {
+.header .mob-nav nav a span {
   color: black;
 }
-.nav a span:hover {
-  color: #BC58F4;
+.header .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+.header .header-info h1 {
+  font-size: 4rem;
+  display: flex;
+}
+.header .header-info .sp {
+  max-width: 30%;
+  padding: 20px 0;
+}
+.header .header-info p {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+.header .mypic img {
+  display: none;
+}
+.header .nav {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .header .header .nav {
+    display: inline;
+  }
+  .header .header .mob-nav {
+    display: none;
+  }
+}
+@media (min-width: 1920px) {
+  .header .header-info .sp {
+    display: none;
+  }
+}
+@media (min-width: 1920px) {
+  .header .mypic img {
+    background-image: linear-gradient(white, #e0b8e4);
+    box-shadow: 2px 5px 20px;
+    color: black;
+    display: inline;
+    max-width: 10%;
+    height: auto;
+  }
+}
+.header .header {
+  background-image: linear-gradient(white, #e0b8e4);
+}
+.header .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+.header .header-info h1 {
+  font-size: 4rem;
+  display: flex;
+}
+.header .header-info .sp {
+  max-width: 30%;
+  padding: 20px 0;
+}
+@media (min-width: 1920px) {
+  .header .header-info .sp {
+    display: none;
+  }
+}
+.header .header-info p {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+.header .mypic img {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .header .mypic img {
+    background-image: linear-gradient(white, #e0b8e4);
+    box-shadow: 2px 5px 20px;
+    color: black;
+    display: inline;
+    max-width: 10%;
+    height: auto;
+  }
+}
+.header .nav {
+  display: none;
 }
 .skills-section {
   background-image: linear-gradient(#e0b8e4, white);
   box-shadow: 2px 5px 20px;
   color: black ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.skills-section h2 {
-  font-size: 5rem;
-  color: black;
-}
-.skills-section .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.skills-section .skills .box {
-  margin: 5px;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.skills-section .skills .box h3 {
-  font-size: 2rem;
-  font-weight: bolder;
-  color: black;
-}
-.skills-section .skills .box ul li {
-  font-size: 1.3rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  padding: 3px 0;
 }
 .soft-skills {
   width: 85%;
@@ -132,6 +155,47 @@
   font-size: 1.3rem;
   color: black;
   padding: 5px 0;
+}
+@media (min-width: 1920px) {
+  .skills-section {
+    background-image: linear-gradient(#e0b8e4, white);
+    box-shadow: 2px 5px 20px;
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-section h2 {
+    font-size: 5rem;
+    color: black;
+  }
+  .skills-section .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .skills-section .skills .box {
+    margin: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-section .skills .box h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+  }
+  .skills-section .skills .box ul li {
+    font-size: 1.3rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 3px 0;
+  }
 }
 .experience-section {
   background-image: linear-gradient(white, #e0b8e4);
