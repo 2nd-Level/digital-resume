@@ -12,38 +12,36 @@
         font-weight: bolder;
         color: black;
     }
-    .skills {
-        display: flex;
-        .centerflex();
-        width: 100%;
-        .box {
-        // border: 5px solid green;
-        margin: 5px;
-        width: 40%;
+}
+
+
+    
+.skills {
+    display: flex;
+    .centerflex();
+    width: 100%;
+    .box {
+    // border: 5px solid green;
+    margin: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    .centerflex();
+    h3 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color: black;
+        padding-bottom: 10px;
+    }
+    ul li {
+        font-size: 1rem;
+        color: black;
         display: flex;
         flex-direction: column;
-        .centerflex();
-        h3 {
-            font-size: 1.3rem;
-            font-weight: bolder;
-            color: black;
-            padding-bottom: 10px;
+        justify-content: left;
+        padding: 4px 0;   
         }
-        ul li {
-            font-size: 1rem;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            padding: 4px 0;
-            
-            
-        }
-        
     }
-    
-    
-}
 }
   
  
@@ -51,6 +49,7 @@
  .soft-skills {
     width: 100%;
     padding-top: 5px;
+
     h3{
         display: flex;
         justify-content: center;
@@ -60,63 +59,17 @@
         font-weight: bolder;
     }
     
- .last-box {
-     display: flex;
-     flex-direction: column;
-     li {
+    .last-box {
+        display: flex;
+        flex-direction: column;
+        li {
         display: flex;
         justify-content: center;
-         font-size: 1rem;
-         color: black;
-         padding: 4px 0;
-         
-         
-     }
- }
-}
-
-
-//Large DeskTop
-.skills-section {
-    @media @largeDesktop {
-        .colormix2();
-         display:flex;
-         flex-direction: column;
-         align-items: center;
-         h2 {
-             font-size: 5rem;
-             color: black;
-         }
-         .skills {
-             display: flex;
-             .centerflex();
-             width: 100%;
-             .box {
-             // border: 5px solid green;
-             margin: 5px;
-             width: 40%;
-             display: flex;
-             flex-direction: column;
-             .centerflex();
-             h3 {
-                 font-size: 2rem;
-                 font-weight: bolder;
-                 color: black;
-             }
-             ul li {
-                 font-size: 1.3rem;
-                 color: black;
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: left;
-                 padding: 3px 0;
-                 
-             }
-             
-         }
-         
-         
-     }
+        font-size: 1rem;
+        color: black;
+        padding: 4px 0;
+        }
     }
-
 }
+
+

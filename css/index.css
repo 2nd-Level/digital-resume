@@ -15,35 +15,6 @@
 .header {
   background-image: linear-gradient(white, #e0b8e4);
 }
-.header .header-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-}
-.header .header-info h1 {
-  font-size: 4rem;
-  display: flex;
-}
-.header .header-info .sp {
-  max-width: 30%;
-  padding: 20px 0;
-}
-.header .header-info p {
-  margin-left: 10px;
-  font-size: 1.4rem;
-}
-.header .mypic img {
-  display: none;
-}
-.header .nav {
-  display: none;
-}
-.header .mob-nav a span:hover {
-  color: #BC58F4;
-}
 .header .mob-nav {
   display: flex;
   overflow: hidden;
@@ -57,43 +28,18 @@
   color: black;
   justify-content: center;
   align-items: center;
+  float: left;
+  display: block;
+  text-align: center;
   text-decoration: none;
   font-size: 1rem;
   padding: 3px 23.2px;
 }
-.mob-nav a {
-  float: left;
-  display: block;
-  text-align: center;
+.header .mob-nav .mob-nav a span:hover {
+  color: #BC58F4;
 }
-.info-container {
+.header .info-container {
   padding: 16px;
-}
-@media (min-width: 1920px) {
-  .header .nav {
-    display: inline;
-  }
-  .header .mob-nav {
-    display: none;
-  }
-}
-@media (min-width: 1920px) {
-  .header-info .sp {
-    display: none;
-  }
-}
-@media (min-width: 1920px) {
-  .mypic img {
-    background-image: linear-gradient(white, #e0b8e4);
-    box-shadow: 2px 5px 20px;
-    color: black;
-    display: inline;
-    max-width: 10%;
-    height: auto;
-  }
-}
-.header {
-  background-image: linear-gradient(white, #e0b8e4);
 }
 .header-info {
   display: flex;
@@ -111,27 +57,12 @@
   max-width: 30%;
   padding: 20px 0;
 }
-@media (min-width: 1920px) {
-  .header-info .sp {
-    display: none;
-  }
-}
 .header-info p {
   margin-left: 10px;
   font-size: 1.4rem;
 }
 .mypic img {
   display: none;
-}
-@media (min-width: 1920px) {
-  .mypic img {
-    background-image: linear-gradient(white, #e0b8e4);
-    box-shadow: 2px 5px 20px;
-    color: black;
-    display: inline;
-    max-width: 10%;
-    height: auto;
-  }
 }
 .nav {
   display: none;
@@ -150,13 +81,13 @@
   font-weight: bolder;
   color: black;
 }
-.skills-section .skills {
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.skills-section .skills .box {
+.skills .box {
   margin: 5px;
   width: 40%;
   display: flex;
@@ -164,13 +95,13 @@
   justify-content: center;
   align-items: center;
 }
-.skills-section .skills .box h3 {
+.skills .box h3 {
   font-size: 1.3rem;
   font-weight: bolder;
   color: black;
   padding-bottom: 10px;
 }
-.skills-section .skills .box ul li {
+.skills .box ul li {
   font-size: 1rem;
   color: black;
   display: flex;
@@ -201,47 +132,6 @@
   color: black;
   padding: 4px 0;
 }
-@media (min-width: 1920px) {
-  .skills-section {
-    background-image: linear-gradient(#e0b8e4, white);
-    box-shadow: 2px 5px 20px;
-    color: black ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .skills-section h2 {
-    font-size: 5rem;
-    color: black;
-  }
-  .skills-section .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .skills-section .skills .box {
-    margin: 5px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .skills-section .skills .box h3 {
-    font-size: 2rem;
-    font-weight: bolder;
-    color: black;
-  }
-  .skills-section .skills .box ul li {
-    font-size: 1.3rem;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 3px 0;
-  }
-}
 .experience-section {
   background-image: linear-gradient(white, #e0b8e4);
   display: flex;
@@ -256,38 +146,38 @@
   font-size: 3rem;
   font-weight: bolder;
 }
-.experience-section .experience {
+.experience {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.experience-section .experience .exper {
+.experience .exper {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 15px;
 }
-.experience-section .experience .exper h4 {
+.experience .exper h4 {
   font-size: 1.1rem;
   color: black;
   font-weight: bold;
 }
-.experience-section .experience .exper h3 {
+.experience .exper h3 {
   font-size: 0.9rem;
   font-weight: 550;
   color: black;
   padding: 5px 0 10px 0;
 }
-.experience-section .experience .exper p {
+.experience .exper p {
   color: black;
 }
-.experience-section .experience .exper ul {
+.experience .exper ul {
   width: 100%;
   color: black;
 }
-.experience-section .experience .exper ul li {
+.experience .exper ul li {
   padding-bottom: 5px;
   list-style-type: circle;
 }
@@ -300,69 +190,71 @@
   color: black;
 }
 .education-section h2 {
-  margin-top: 28px;
+  margin-top: 25px;
   color: black;
   font-size: 3rem;
   font-weight: bolder;
 }
-.education-section .education {
+.education {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.education-section .education .edu {
+.education .edu {
   width: 100%;
-  padding-top: 15px;
+  padding: 15px 0 3.5px 0;
   height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 5px 20px;
-  color: #b7a8c0;
+  color: black;
 }
-.education-section .education .edu h4 {
+.education .edu h4 {
   font-size: 1.1rem;
   color: black;
   font-weight: bold;
 }
-.education-section .education .edu h3 {
+.education .edu h3 {
   font-size: 0.9rem;
   font-weight: 550;
   color: black;
   padding: 5px 0 10px 0;
 }
-.education-section .education .edu ul {
+.education .edu ul {
   width: 80%;
   color: black;
 }
-.education-section .education .edu ul li {
+.education .edu ul li {
   padding-bottom: 5px;
   list-style-type: circle;
 }
 .contact {
   background-image: linear-gradient(white, #e0b8e4);
-  padding-top: 40px;
-  box-shadow: 2px 5px 20px;
-  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  box-shadow: 2px 5px 20px;
+  color: black;
 }
 .contact .contact-info {
   background-image: linear-gradient(white, #e0b8e4);
   box-shadow: 2px 5px 20px;
   color: black;
   color: #b7a8c0;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .contact h5 {
-  font-size: 5rem;
+  font-size: 2rem;
   color: black;
+  align-self: center;
 }
 .contact p {
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
