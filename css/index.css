@@ -4,10 +4,9 @@
   margin: 0 auto;
   box-shadow: 2px 5px 20px;
   color: #e6eba2;
-  margin-top: 30px;
 }
 .conatiner .all {
-  height: 400px;
+  height: 500px;
   color: black;
 }
 .conatiner .all h2 {
@@ -16,9 +15,41 @@
 .header {
   background-image: linear-gradient(white, #e0b8e4);
 }
+.header .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+.header .header-info h1 {
+  font-size: 4rem;
+  display: flex;
+}
+.header .header-info .sp {
+  max-width: 30%;
+  padding: 20px 0;
+}
+.header .header-info p {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+.header .mypic img {
+  display: none;
+}
+.header .nav {
+  display: none;
+}
+.header .mob-nav a span:hover {
+  color: #BC58F4;
+}
 .header .mob-nav {
-  background-color: green;
-  max-width: 95%;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .header .mob-nav nav a {
   background-image: linear-gradient(white, #e0b8e4);
@@ -28,52 +59,31 @@
   align-items: center;
   text-decoration: none;
   font-size: 1rem;
-  padding: 3px 0;
+  padding: 3px 23.2px;
 }
-.header .mob-nav nav a span {
-  color: black;
+.mob-nav a {
+  float: left;
+  display: block;
+  text-align: center;
 }
-.header .header-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-}
-.header .header-info h1 {
-  font-size: 4rem;
-  display: flex;
-}
-.header .header-info .sp {
-  max-width: 30%;
-  padding: 20px 0;
-}
-.header .header-info p {
-  margin-left: 10px;
-  font-size: 1.4rem;
-}
-.header .mypic img {
-  display: none;
-}
-.header .nav {
-  display: none;
+.info-container {
+  padding: 16px;
 }
 @media (min-width: 1920px) {
-  .header .header .nav {
+  .header .nav {
     display: inline;
   }
-  .header .header .mob-nav {
+  .header .mob-nav {
     display: none;
   }
 }
 @media (min-width: 1920px) {
-  .header .header-info .sp {
+  .header-info .sp {
     display: none;
   }
 }
 @media (min-width: 1920px) {
-  .header .mypic img {
+  .mypic img {
     background-image: linear-gradient(white, #e0b8e4);
     box-shadow: 2px 5px 20px;
     color: black;
@@ -82,10 +92,10 @@
     height: auto;
   }
 }
-.header .header {
+.header {
   background-image: linear-gradient(white, #e0b8e4);
 }
-.header .header-info {
+.header-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,28 +103,28 @@
   width: 100%;
   padding: 15px;
 }
-.header .header-info h1 {
+.header-info h1 {
   font-size: 4rem;
   display: flex;
 }
-.header .header-info .sp {
+.header-info .sp {
   max-width: 30%;
   padding: 20px 0;
 }
 @media (min-width: 1920px) {
-  .header .header-info .sp {
+  .header-info .sp {
     display: none;
   }
 }
-.header .header-info p {
+.header-info p {
   margin-left: 10px;
   font-size: 1.4rem;
 }
-.header .mypic img {
+.mypic img {
   display: none;
 }
 @media (min-width: 1920px) {
-  .header .mypic img {
+  .mypic img {
     background-image: linear-gradient(white, #e0b8e4);
     box-shadow: 2px 5px 20px;
     color: black;
@@ -123,38 +133,73 @@
     height: auto;
   }
 }
-.header .nav {
+.nav {
   display: none;
 }
 .skills-section {
   background-image: linear-gradient(#e0b8e4, white);
   box-shadow: 2px 5px 20px;
   color: black ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-section h2 {
+  margin-top: 28px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+}
+.skills-section .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.skills-section .skills .box {
+  margin: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-section .skills .box h3 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: black;
+  padding-bottom: 10px;
+}
+.skills-section .skills .box ul li {
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 4px 0;
 }
 .soft-skills {
-  width: 85%;
-  padding-top: 30px;
+  width: 100%;
+  padding-top: 5px;
 }
 .soft-skills h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bolder;
 }
 .soft-skills .last-box {
   display: flex;
-  justify-content: space-between;
-}
-.soft-skills .last-box ul {
-  display: flex;
   flex-direction: column;
 }
 .soft-skills .last-box li {
-  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
   color: black;
-  padding: 5px 0;
+  padding: 4px 0;
 }
 @media (min-width: 1920px) {
   .skills-section {
@@ -206,14 +251,16 @@
   color: black;
 }
 .experience-section h2 {
-  font-size: 5rem;
+  margin-top: 28px;
   color: black;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 .experience-section .experience {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .experience-section .experience .exper {
   width: 50%;
@@ -223,12 +270,12 @@
   padding-top: 15px;
 }
 .experience-section .experience .exper h4 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   color: black;
   font-weight: bold;
 }
 .experience-section .experience .exper h3 {
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   font-weight: 550;
   color: black;
   padding: 5px 0 10px 0;
@@ -237,11 +284,10 @@
   color: black;
 }
 .experience-section .experience .exper ul {
-  width: 30%;
+  width: 100%;
   color: black;
 }
 .experience-section .experience .exper ul li {
-  font-size: 1.2rem;
   padding-bottom: 5px;
   list-style-type: circle;
 }
@@ -254,16 +300,16 @@
   color: black;
 }
 .education-section h2 {
-  font-size: 5rem;
+  margin-top: 28px;
   color: black;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 .education-section .education {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  height: 100%;
-  padding-top: 15px;
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .education-section .education .edu {
   width: 100%;
@@ -276,12 +322,12 @@
   color: #b7a8c0;
 }
 .education-section .education .edu h4 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   color: black;
   font-weight: bold;
 }
 .education-section .education .edu h3 {
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   font-weight: 550;
   color: black;
   padding: 5px 0 10px 0;
@@ -291,7 +337,6 @@
   color: black;
 }
 .education-section .education .edu ul li {
-  font-size: 1.2rem;
   padding-bottom: 5px;
   list-style-type: circle;
 }
