@@ -1,6 +1,6 @@
 .conatiner {
   font-family: 'Libre Baskerville', serif;
-  max-width: 75%;
+  max-width: 95%;
   margin: 0 auto;
   box-shadow: 2px 5px 20px;
   color: #e6eba2;
@@ -33,7 +33,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  padding: 3px 23.2px;
+  padding: 3px 15.8px;
 }
 .header .mob-nav .mob-nav a span:hover {
   color: #BC58F4;
@@ -50,7 +50,7 @@
   padding: 15px;
 }
 .header-info h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
 }
 .header-info .sp {
@@ -153,7 +153,7 @@
   align-items: center;
 }
 .experience .exper {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,7 +203,8 @@
 }
 .education .edu {
   width: 100%;
-  padding: 15px 0 3.5px 0;
+  margin-top: 18px;
+  padding: 15px 0 0px 0;
   height: 90%;
   display: flex;
   flex-direction: column;
