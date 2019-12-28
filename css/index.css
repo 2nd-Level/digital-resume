@@ -1,17 +1,3 @@
-.conatiner {
-  font-family: 'Libre Baskerville', serif;
-  max-width: 95%;
-  margin: 0 auto;
-  box-shadow: 2px 5px 20px;
-  color: #e6eba2;
-}
-.conatiner .all {
-  height: 500px;
-  color: black;
-}
-.conatiner .all h2 {
-  padding-top: 10px;
-}
 .header {
   background-image: linear-gradient(white, #e0b8e4);
 }
@@ -34,7 +20,7 @@
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.15rem;
   width: 100%;
 }
 .header .mob-nav .mob-nav a span:hover {
@@ -52,7 +38,7 @@
   padding: 15px;
 }
 .header-info h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: flex;
 }
 .header-info .sp {
@@ -69,15 +55,18 @@
 .nav {
   display: none;
 }
-.skills-section {
+#skills {
+  height: 750px;
+}
+.all-skills {
   background-image: linear-gradient(#e0b8e4, white);
-  box-shadow: 2px 5px 20px;
   color: black ;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 700px;
 }
-.skills-section h2 {
+.all-skills h2 {
   margin-top: 28px;
   font-size: 3rem;
   font-weight: bolder;
@@ -85,157 +74,26 @@
 }
 .skills {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
+}
+.skills h3 {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
 }
 .skills .box {
-  margin: 5px;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.skills .box h3 {
-  font-size: 1.3rem;
-  font-weight: bolder;
-  color: black;
-  padding-bottom: 10px;
-}
-.skills .box ul li {
-  font-size: 1rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  padding: 4px 0;
-}
-.soft-skills {
-  width: 100%;
-  padding-top: 5px;
-}
-.soft-skills h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 1.3rem;
-  font-weight: bolder;
-}
-.soft-skills .last-box {
-  display: flex;
-  flex-direction: column;
-}
-.soft-skills .last-box li {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  color: black;
-  padding: 4px 0;
-}
-.experience-section {
-  background-image: linear-gradient(white, #e0b8e4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-shadow: 2px 5px 20px;
-  color: black;
-}
-.experience-section h2 {
-  margin-top: 28px;
-  color: black;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-.experience {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.experience .exper {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 15px;
-}
-.experience .exper h4 {
-  font-size: 1.1rem;
-  color: black;
-  font-weight: bold;
-}
-.experience .exper h3 {
-  font-size: 0.9rem;
-  font-weight: 550;
-  color: black;
-  padding: 5px 0 10px 0;
-}
-.experience .exper p {
-  color: black;
-}
-.experience .exper ul {
-  width: 100%;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.experience .exper ul li {
-  padding-bottom: 5px;
-  list-style-type: circle;
-}
-.education-section {
-  background-image: linear-gradient(#e0b8e4, white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 5px 20px;
-  color: black;
-}
-.education-section h2 {
-  margin-top: 25px;
-  color: black;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-.education {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.education .edu {
-  width: 100%;
-  margin-top: 18px;
-  padding: 15px 0 0px 0;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 5px 20px;
-  color: black;
-}
-.education .edu h4 {
-  font-size: 1.1rem;
-  color: black;
-  font-weight: bold;
-}
-.education .edu h3 {
-  font-size: 0.9rem;
-  font-weight: 550;
-  color: black;
-  padding: 5px 0 10px 0;
-}
-.education .edu ul {
   width: 80%;
   color: black;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+  height: 330px;
 }
-.education .edu ul li {
-  padding-bottom: 5px;
-  list-style-type: circle;
+.skills ul li {
+  padding: 5px 0;
 }
 .contact {
   background-image: linear-gradient(white, #e0b8e4);
@@ -243,7 +101,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  box-shadow: 2px 5px 20px;
   color: black;
 }
 .contact .contact-info {
@@ -282,6 +139,9 @@
   display: flex;
   justify-content: space-between;
 }
+#footer {
+  height: 320px;
+}
 footer {
   height: 50px;
   background-image: linear-gradient(white, #e0b8e4);
@@ -291,4 +151,294 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 800px ) {
+  .container .all {
+    height: 300px;
+  }
+}
+@media (min-width: 1919px ) {
+  .container {
+    background-color: #dddada;
+  }
+  section {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (min-width: 1121px ) {
+  .container {
+    background-color: #dddada;
+  }
+  section {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+#experience {
+  height: 360px;
+}
+.experience-section {
+  background-image: linear-gradient(white, #e0b8e4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+.experience-section h2 {
+  margin-top: 28px;
+  color: black;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience .experience-box {
+  box-shadow: 2px 5px 20px;
+  margin-top: 20px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px 0 10px;
+}
+.experience .experience-box h4 {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+}
+.experience .experience-box h3 {
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: black;
+  padding: 5px 0 10px 0;
+}
+.experience .experience-box p {
+  color: black;
+}
+.experience .experience-box ul {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience .experience-box ul li {
+  padding-bottom: 5px;
+}
+@media (min-width: 800px ) {
+  #experience {
+    height: 420px;
+    background-color: aqua;
+  }
+  #experience .experience {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #experience .experience .experience-box {
+    height: 250px;
+    width: 45%;
+    padding: 10px;
+    margin: 20px;
+  }
+  #experience .experience .experience-box h4 {
+    font-size: 2.4rem;
+  }
+  #experience .experience .experience-box h3 {
+    font-size: 1rem;
+  }
+  #experience .experience .experience-box ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1919px ) {
+  #experience {
+    height: 420px;
+    background-color: aqua;
+  }
+  #experience .experience {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #experience .experience .experience-box {
+    height: 250px;
+    width: 45%;
+    padding: 10px;
+    margin: 20px;
+  }
+  #experience .experience .experience-box h4 {
+    font-size: 2.4rem;
+  }
+  #experience .experience .experience-box h3 {
+    font-size: 1rem;
+  }
+  #experience .experience .experience-box ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px ) {
+  .header .mob-nav {
+    display: none;
+  }
+  .info-container {
+    display: flex;
+  }
+  .info-container .header-info {
+    width: 46%;
+    margin-right: 10px;
+    padding: 0;
+  }
+  .info-container .header-info img {
+    display: none;
+  }
+  .info-container .header-info span {
+    margin-bottom: 20px;
+  }
+  .info-container .mypic {
+    width: 50%;
+    padding-left: 90px;
+  }
+  .info-container .mypic img {
+    display: inline;
+    max-width: 50%;
+  }
+  .info-container .nav {
+    display: inline;
+  }
+  .info-container .nav nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-container .nav nav a {
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 100%;
+    padding: 4px 0;
+    margin: 5px 0;
+  }
+  .info-container .nav nav a:hover {
+    background-image: linear-gradient(white, #e0b8e4);
+    box-shadow: 2px 5px 20px;
+    color: black;
+  }
+}
+@media (min-width: 1919px ) {
+  .info-container .mypic img {
+    display: inline;
+    max-width: 40%;
+  }
+}
+@media (min-width: 1121px ) {
+  .info-container .mypic img {
+    display: inline;
+    max-width: 55%;
+  }
+}
+@media (min-width: 1470px ) {
+  .info-container .mypic img {
+    display: inline;
+    max-width: 40%;
+  }
+}
+@media (min-width: 800px ) {
+  #skills {
+    height: 520px;
+  }
+  #skills .skills {
+    flex-direction: row;
+  }
+  #skills .box {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1919px ) {
+  #skills {
+    height: 550px;
+  }
+  #skills .skills {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.box {
+  height: 400px;
+}
+.box h3 {
+  font-size: 2.4rem;
+}
+.box ul li {
+  font-size: 1.5rem;
+}
+#education {
+  height: 320px;
+}
+.education-section {
+  background-image: linear-gradient(#e0b8e4, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+.education-section h2 {
+  margin-top: 25px;
+  color: black;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.education {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education .edu {
+  width: 100%;
+  margin-top: 18px;
+  padding: 15px 0 0px 0;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 5px 20px;
+  color: black;
+}
+.education .edu h4 {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+}
+.education .edu h3 {
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: black;
+  padding: 5px 0 10px 0;
+}
+.education .edu ul {
+  width: 80%;
+  color: black;
+}
+.education .edu ul li {
+  padding-bottom: 5px;
+  list-style-type: circle;
+}
+#education {
+  height: 420px;
+}
+.education .edu h4 {
+  font-size: 2rem;
+}
+.education .edu h3 {
+  font-size: 1.5rem;
+}
+.education .edu p {
+  font-size: 1.2rem;
 }
